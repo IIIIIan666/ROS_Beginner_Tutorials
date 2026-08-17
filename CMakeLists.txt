@@ -56,7 +56,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate services in the 'srv' folder
  add_service_files(
    FILES
-   AddTwoInts.srv
+   Calculator.srv
  )
 
 ## Generate actions in the 'action' folder
@@ -209,10 +209,10 @@ target_link_libraries(talker ${catkin_LIBRARIES})
 add_executable(listener src/listener.cpp)
 target_link_libraries(listener ${catkin_LIBRARIES})
 
-add_executable(add_two_ints_server src/add_two_ints_server.cpp)
-target_link_libraries(add_two_ints_server ${catkin_LIBRARIES})
-add_dependencies(add_two_ints_server beginner_tutorials_gencpp)
+add_executable(calculator_server src/calculator_server.cpp)
+target_link_libraries(calculator_server ${catkin_LIBRARIES})
+add_dependencies(calculator_server beginner_tutorials_gencpp)
  
-add_executable(add_two_ints_client src/add_two_ints_client.cpp)
-target_link_libraries(add_two_ints_client ${catkin_LIBRARIES})
-add_dependencies(add_two_ints_client beginner_tutorials_gencpp)
+add_executable(calculator_client src/calculator_client.cpp)
+target_link_libraries(calculator_client ${catkin_LIBRARIES})
+add_dependencies(calculator_client beginner_tutorials_gencpp)

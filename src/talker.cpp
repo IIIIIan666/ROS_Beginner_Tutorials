@@ -16,7 +16,7 @@ int main(int argc, char **argv){
     //loop rate allows us to specify a frequency to loop at.
     // it will keep track of how long it has been since the last call to 
     // Rate::sleep() and sleep for the corrct amount of time
-    ros::Rate loop_rate(10);
+    ros::Rate loop_rate(2);
 
     int count = 0;
     /*

@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<!-- calculator.launch-->
+
+<launch>
+    <node pkg="beginner_tutorials"
+          type="calculator_server"
+          name="calculator_server"
+          output="screen" />
+    
+    <node pkg="beginner_tutorials"
+          type="talker"
+          name="talker"
+          output="screen" />
+
+    <node pkg="beginner_tutorials"
+          type="listener"
+          name="listener"
+          output="screen" />
+</launch>
